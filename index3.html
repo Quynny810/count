@@ -3,21 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900">
     <title>Document</title>
     <style>
 
-
-    body{
-           background-color: transparent;
-            text-align: center;
-            font-family: "Lobster", sans-serif;
-            background-color: #fff;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: 0.05em;
-
-        }
+body{
+    background-color: white;
+}
   
 #timer {
   color: #eeeeee;
@@ -29,14 +21,10 @@
 }
 
 .days, .hours, .minutes, .seconds {
-            display: inline-block;
-            padding: 15px;
-            border-radius: 10px;
-            min-width: 50px;
-            height: 50px;
-            border: 4px solid #01398a;
-            border-radius: 10px;
-            box-shadow: 2px 2px 1px 0px #01398a;
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
 }
 
 .days {
@@ -115,7 +103,7 @@
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('Oct 8, 2024 00:00:00');
+const myDate = new Date('Oct 15, 2025 00:00:00');
 console.log(myDate);
 
 // countdown
