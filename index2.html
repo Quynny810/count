@@ -13,14 +13,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border-radius: 15px;
+  border-radius: 19px;
 }
 
 body {
   font-family: "Lexend", sans-serif;
-   background-color: rgba(255,255,255,0);
-  color: #fff;
-  border-radius: 15px;
+  background-color: rgba(255,255,255,0);
+  color: #ffffff;
+  border-radius: 19px;
 }
 
 .slider {
@@ -48,26 +48,21 @@ body {
 .slide:first-child {
   background: url("1.jpeg") no-repeat
     center top/cover;
-  border-radius: 15px;
+  border-radius: 19px;
 }
 
 .slide:nth-child(2) {
   background: url("2.jpeg") no-repeat
     center top/cover;
-  border-radius: 15px;
+  border-radius: 19px;
 }
 
 .slide:nth-child(3) {
   background: url("3.jpeg") no-repeat
     center top/cover;
-  border-radius: 15px;
+  border-radius: 19px;
 }
-  
- .slide:nth-child(4) {
-  background: url("4.jpeg") no-repeat
-    center top/cover;
-   border-radius: 15px;
-}
+
 
 .buttons button#prev {
   position: absolute;
@@ -82,9 +77,9 @@ body {
 }
 
 .buttons button {
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   padding: 13px 15px;
   border-radius: 50%;
@@ -92,7 +87,7 @@ body {
 }
 
 .buttons button:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #01398a;
 }
 
@@ -137,8 +132,7 @@ body {
     const intervalTime = 5000;
     let slideInterval;
 
-   
-     const nextSlide = () => {
+    const nextSlide = () => {
       const current = document.querySelector(".current");
       current.classList.remove("current");
       if (current.nextElementSibling) {
