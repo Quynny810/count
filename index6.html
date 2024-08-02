@@ -13,6 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border-radius: 15px;
 }
 
 body {
@@ -47,21 +48,25 @@ body {
 .slide:first-child {
   background: url("1.jpeg") no-repeat
     center top/cover;
+  border-radius: 15px;
 }
 
 .slide:nth-child(2) {
   background: url("2.jpeg") no-repeat
     center top/cover;
+  border-radius: 15px;
 }
 
 .slide:nth-child(3) {
   background: url("3.jpeg") no-repeat
     center top/cover;
+  border-radius: 15px;
 }
   
  .slide:nth-child(4) {
   background: url("4.jpeg") no-repeat
     center top/cover;
+   border-radius: 15px;
 }
 
 .buttons button#prev {
@@ -88,7 +93,7 @@ body {
 
 .buttons button:hover {
   background-color: #fff;
-  color: #362a2b;
+  color: #01398a;
 }
 
 @media (min-width: 640px) and (min-height: 640px) {
@@ -133,6 +138,16 @@ body {
     let slideInterval;
 
     const nextSlide = () => {
+      const current = document.querySelector(".current");
+      current.classList.remove("current");
+      if (current.nextElementSibling) {
+        current.nextElementSibling.classList.add("current");
+      } else {
+        slides[0].classList.add("current");
+      }
+      
+    };
+     const nextSlide = () => {
       const current = document.querySelector(".current");
       current.classList.remove("current");
       if (current.nextElementSibling) {
